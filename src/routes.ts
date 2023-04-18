@@ -1,9 +1,9 @@
 import { Router, Request, Response } from "express";
-import ProdController from "./controllers/ProdController";
+import ProdController from "./controllers/Prod.controller";
 
 const routes = Router();
 
-routes.get("/vazio", ProdController.teste);
-routes.post("/vazio", ProdController.testePost);
+routes.get("/produtos", ProdController.getProdutos);
+routes.post("/produtos", ProdController.postProdutos);
 
 export default routes;
